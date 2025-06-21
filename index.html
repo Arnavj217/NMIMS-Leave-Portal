@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NMIMS Leave Portal</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #4f46e5;
+      --accent: #6366f1;
+      --background: linear-gradient(to right, #e0f2ff, #f1e4ff);
+      --box-bg: white;
+      --text: #1f2937;
+      --hover: #4338ca;
+      --hero-bg: linear-gradient(135deg, #dbeafe, #ede9fe);
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--background);
+      color: var(--text);
+      scroll-behavior: smooth;
+    }
+    header {
+      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+    }
+    .header-text {
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+    header img {
+      height: 70px;
+    }
+    .hero {
+      text-align: center;
+      padding: 4rem 2rem;
+      background: var(--hero-bg);
+      border-radius: 0 0 1.5rem 1.5rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      color: var(--primary);
+    }
+    .hero p {
+      margin: 1rem auto 2rem;
+      max-width: 700px;
+      font-size: 1.2rem;
+    }
+    .hero a {
+      padding: 1rem 2rem;
+      background-color: var(--accent);
+      color: white;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease-in-out;
+      display: inline-block;
+      animation: pulse 2s infinite;
+    }
+    .hero a:hover {
+      background-color: var(--hover);
+      transform: scale(1.05);
+    }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(99,102,241,0.7); }
+      70% { box-shadow: 0 0 0 10px rgba(99,102,241,0); }
+      100% { box-shadow: 0 0 0 0 rgba(99,102,241,0); }
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+    h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      color: var(--primary);
+      margin-bottom: 2rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: var(--box-bg);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      font-size: 1rem;
+    }
+    footer {
+      background: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #6b7280;
+    }
+    footer span {
+      font-weight: 800;
+      color: var(--primary);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-text">NMIMS Leave Application Portal</div>
+    <img src="nmims_logo.jpg" alt="NMIMS Logo">
+  </header>
+
+  <section class="hero" id="apply">
+    <h1>Your Digital Route to Step Out</h1>
+    <p><em>A web-based leave management system for NMIMS students</em></p>
+    <a href="https://nmims-leave-portal-94.lovable.app">Apply for Leave</a>
+  </section>
+
+  <section id="features">
+    <h2>📌 Features</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>✅ Student Registration & Login</h3>
+        <p>Students can create and securely access their accounts for managing leave applications.</p>
+      </div>
+      <div class="card">
+        <h3>✅ Parent Registration & Login</h3>
+        <p>Parents create their own profiles to access, review, and respond to leave requests.</p>
+      </div>
+      <div class="card">
+        <h3>✅ Leave Application Form</h3>
+        <p>Students can fill a user-friendly form with all necessary details for the leave request.</p>
+      </div>
+      <div class="card">
+        <h3>✅ Parent Approval</h3>
+        <p>Parents review requests and provide approval or rejection directly via the portal.</p>
+      </div>
+      <div class="card">
+        <h3>✅ Mentor Dashboard</h3>
+        <p>Mentors view requests already approved by parents and give final approval or rejection.</p>
+      </div>
+      <div class="card">
+        <h3>✅ Leave Status Tracking</h3>
+        <p>Students can log in anytime to track their leave status: Pending, Approved, or Rejected.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 NMIMS Leave Application Portal . All rights reserved <br> Designed by <span>Arav-Arnav</span>
+  </footer>
+</body>
+</html>
