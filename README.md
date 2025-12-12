@@ -1,20 +1,41 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🏫 NMIMS Leave Portal
 
-# Run and deploy your AI Studio app
+A web-based leave management system for NMIMS students, allowing:
+- Students to apply for leaves,
+- Parents to register and approve the leaves,
+- Mentors to review and give final approval.
 
-This contains everything you need to run your app locally.
+## 📌 Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1_VnbzWHqZHV8gSXaL1BXyUVInwJD-iEN
+✅ Student registration and login  
+✅ Parent registration and login  
+✅ Student leave application form  
+✅ Parent approval interface  
+✅ Mentor dashboard for final leave approval  
+✅ Leave status tracking
 
-## Run Locally
+---
 
-**Prerequisites:**  Node.js
+## 🧑‍💻 Tech Stack
 
+| Frontend      | Backend         | Database      |
+|---------------|-----------------|---------------|
+| HTML, CSS, JS | Node.js / PHP / Python (customize based on your stack) | MySQL / MongoDB |
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+---
+
+## 📝 How It Works
+
+1. Student Registration  
+   Students create an account, login, and apply for leave using a form (with date, reason, etc.).
+
+2. Parent Registration & Approval  
+   Parents register separately and view their child’s leave request, and can approve or reject it.
+
+3. Mentor Approval  
+   Once a parent approves the request, it is forwarded to the mentor for final review and decision.
+
+4. Tracking  
+   Students can log in to check the current status (Pending, Approved, Rejected).
+
+---
