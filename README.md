@@ -24,6 +24,14 @@ A web-based leave management system for NMIMS students, allowing:
 
 ---
 
+## 🌐 Deployment
+
+The application is deployed on Vercel and can be accessed here:
+
+👉 https://orion-ai-kappa.vercel.app
+
+---
+
 ## 📝 How It Works
 
 1. Student Registration  
